@@ -1,0 +1,40 @@
+/* Estilos específicos de seleccionar_asientos.php */
+.sa-precio,
+.sa-disponibles {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.sa-asientos {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.sa-asiento {
+    position: relative;
+}
+
+.sa-asiento input[type="checkbox"] {
+    display: none;
+}
+
+.sa-asiento label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sa-asiento input:checked + label {
+    background-color: #4caf50;
+    color: white;
+}
