@@ -51,3 +51,14 @@
 .tabla-admin tr:hover {
     background-color: #eef;
 }
+
+/*** editar.php ***/
+.form-admin input[type="text"],
+.form-admin input[type="number"],
+.form-admin input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
