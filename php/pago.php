@@ -58,6 +58,9 @@ foreach ($_SESSION['carrito'] as $item) {
 }
 // Aquí podrías guardar la venta en la base de datos (ventas/detalles_venta)
 
+//
+
+
 // Guardar total en sesión para el PDF
 $_SESSION['total_compra'] = $total;
 
