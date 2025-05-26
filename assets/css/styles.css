@@ -13,25 +13,29 @@
 /* Slider */
 #carrusel {
     position: relative;
-    width: 90%;
-    max-width: 800px;
+    width: 75%; /* o el ancho que desees */
+    max-width: 450px; /* o el ancho máximo que desees */
     margin: 20px auto;
-    overflow: hidden; /* 👈 Esto es esencial */
+    overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    height: 566px; /* Altura del viewport del carrusel, ajústala si es necesario */
 }
 
 .slider-container {
     display: flex;
-    width: 400%; /* Si tienes 4 imágenes, 4 x 100% */
+    /* El ancho (width) es establecido por JavaScript */
+    height: 100%; /* Para que ocupe toda la altura de #carrusel */
     transition: transform 0.5s ease-in-out;
 }
 
 .slider-container img {
-    width: 100%; /* Cada imagen toma todo el espacio visible */
-    max-height: 350px;
-    object-fit: cover;
-    flex-shrink: 0;
+    /* El ancho (width) es establecido por JavaScript */
+    height: 100%; /* Las imágenes llenan la altura del .slider-container */
+    /*object-fit: cover;  Cubre el área, puede recortar si es necesario */
+    object-fit: contain;
+    flex-shrink: 0; /* Importante para que las imágenes no se encojan */
+    display: block; /* Opcional: para remover posible espacio extra bajo la imagen */
 }
 
 .slider-btn {
